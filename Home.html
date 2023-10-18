@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter the Values from CTG report for Fetal Health Analysis</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: "General Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 20px;
+    }
+
+ 
+    .number-selector {
+      display: inline-block;
+      margin-right: 20px;
+      border-radius: 20px;
+      border: 2px solid #ccc; /* Add a border here */
+      padding: 8px; /* Add padding to create space inside the border */
+    }
+
+    .number-selector:last-child {
+      margin-right: 0;
+    }
+
+    .entry {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+     
+    }
+
+    .btn {
+      margin: 0 10px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Enter the Values from CTG report for Fetal Health Analysis</h1>
+    <br/>
+
+    <div class="row">
+      <!-- Number Selector 1 -->
+      <div class="col-md-4">
+        <div class="number-selector" >
+          <h4>Baseline Value</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 2 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Accelerations</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 3 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Fetal Movement</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 4 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Uterine Contractions</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 5 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Light Decelerations</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 6 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Severe Decelerations</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 7 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Prolongued Decelerations</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 8 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Abnormal Short term Variability</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 9 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Mean value of short term variability</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 10 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Percentage of time with abnormal long term variability</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 11 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Min</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 12 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Max</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 13 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram number of peaks</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 14 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram number of zeroes</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 15 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Mode</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 16 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Mean</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 17 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Median</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 18 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Variance</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Number Selector 19 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Histogram Tendency</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 20 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Fetal health</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Number Selector 21 -->
+      <div class="col-md-4">
+        <div class="number-selector">
+          <h4>Number Selector 21</h2>
+          <div class="entry">
+            <button class="btn btn-secondary minus">-</button>
+            <span class="number">0</span>
+            <button class="btn btn-secondary plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Number Selector 19 -->
+        <div class="col-md-4">
+          <div class="number-selector">
+            <h4>Number Selector 22</h2>
+            <div class="entry">
+              <button class="btn btn-secondary minus">-</button>
+              <span class="number">0</span>
+              <button class="btn btn-secondary plus">+</button>
+            </div>
+          </div>
+        </div>
+        
+
+  </div><br/>
+  <button type="button" class="btn btn-dark">Predict Fetal Health</button>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript to handle +/- buttons
+    $(document).ready(function() {
+      $(".plus").click(function() {
+        var numberElement = $(this).siblings(".number");
+        var currentNumber = parseInt(numberElement.text());
+        numberElement.text(currentNumber + 1);
+      });
+
+      $(".minus").click(function() {
+        var numberElement = $(this).siblings(".number");
+        var currentNumber = parseInt(numberElement.text());
+        if (currentNumber > 0) {
+          numberElement.text(currentNumber - 1);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
